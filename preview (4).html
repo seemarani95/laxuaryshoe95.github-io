@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maison Sole | Luxury Editorial</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Inter', sans-serif;
+  background: #f8f6f2;
+  color: #111;
+}
+
+/* HEADER */
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  border-bottom: 1px solid #eee;
+  z-index: 1000;
+}
+
+header h1 {
+  font-family: 'Playfair Display', serif;
+  color: #c8a96a;
+}
+
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1549298916-b41d501d3772') center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 60px;
+  font-family: 'Playfair Display', serif;
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+}
+
+/* SECTION */
+.section {
+  padding: 80px 60px;
+}
+
+/* TITLE */
+.section h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 30px;
+}
+
+/* BRANDS GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px;
+}
+
+.card p {
+  margin: 0 15px 20px;
+}
+
+/* BLOG */
+.blog-card img {
+  height: 200px;
+}
+
+/* LOOKBOOK */
+.lookbook img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.lookbook img:hover {
+  transform: scale(1.05);
+}
+
+/* ABOUT */
+.about {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* FOOTER */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+  <h1>Maison Sole</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#brands">Brands</a>
+    <a href="#editorial">Editorial</a>
+    <a href="#lookbook">Lookbook</a>
+    <a href="#about">About</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <h2>Luxury. Craftsmanship. Legacy.</h2>
+</section>
+
+<!-- BRANDS -->
+<section class="section" id="brands">
+  <h2>Luxury Brands</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1528701800489-20be3c1d2c2d">
+      <h3>Italian Heritage</h3>
+      <p>Timeless craftsmanship rooted in tradition.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+      <h3>Paris Couture</h3>
+      <p>Where fashion meets artistic expression.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d">
+      <h3>British Classic</h3>
+      <p>Elegance defined through precision and detail.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- EDITORIAL -->
+<section class="section" id="editorial">
+  <h2>Editorial Stories</h2>
+
+  <div class="grid">
+
+    <div class="card blog-card">
+      <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
+      <h3>The Art of Handmade Shoes</h3>
+      <p>Discover the craftsmanship behind luxury footwear.</p>
+    </div>
+
+    <div class="card blog-card">
+      <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0">
+      <h3>Luxury Trends 2026</h3>
+      <p>Explore modern high-end fashion directions.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- LOOKBOOK -->
+<section class="section" id="lookbook">
+  <h2>Lookbook</h2>
+
+  <div class="grid lookbook">
+    <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772">
+    <img src="https://images.unsplash.com/photo-1519744346363-d8d8d68c9a4b">
+    <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <h2>About Maison Sole</h2>
+  <p>
+    Maison Sole is a curated editorial platform dedicated to the world of luxury footwear.
+    We explore heritage, craftsmanship, and design excellence through deep storytelling
+    and immersive visual experiences.
+  </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Maison Sole | Luxury Editorial Platform</p>
+</footer>
+
+</body>
+</html>
